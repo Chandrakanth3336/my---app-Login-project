@@ -1,0 +1,72 @@
+/* Center the rectangle calculator on the page */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+/* Style the calculator container */
+.child {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the title */
+.child h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Style the labels */
+.child label {
+    font-size: 16px;
+    color: #555555;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Style the input fields */
+.child input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the button */
+.child button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.child button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the result display */
+.child h1:last-of-type {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #444444;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}

@@ -1,0 +1,58 @@
+<div class="parent">
+    <div class="child">
+        <label for="">Search:</label>
+        <input type="text" [(ngModel)]="asdf" (keyup)="filter()">
+        <br>
+        <br>
+        <label for="">Sort column:</label>
+        <select name="" id="" [(ngModel)]="column">
+            <option value="name">Name</option>
+            <option value="phone">Phone</option>
+            <option value="city">City</option>
+            <option value="dob">Dob</option>
+            <option value="">Profile_picture</option>
+            <option value="email">Email</option>
+        </select>
+        <label for="">Order</label>
+        <select name="" id="" [(ngModel)]="order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <button (click)="sort()">Sort</button>
+        
+        <label for="">Limit</label>
+        <input type="number" [(ngModel)]="zxcv">
+        <label for="">Page</label>
+        <input type="number" [(ngModel)]="page">
+        <button (click)="limit()">Page</button>
+    </div>
+    <div class="child1">
+        <div class="id-box" *ngFor="let Identitycards of Identitycard">
+            <div class="top">
+                {{Identitycards.school_name}}
+            </div>
+            <div class="middle">
+                <div class="left">
+                    {{'Name :'+Identitycards.name}}
+                    <br>
+                    {{'Phone :'+Identitycards.phone}}
+                    <br>
+                    {{'City :'+Identitycards.city}}
+                    <br>
+                    {{'DOB :'+Identitycards.dob}}
+                    <br>
+                    {{'Email :'+Identitycards.email}}
+                    <br>
+                </div>
+                <div class="right">
+                    <img src="{{Identitycards.profile_picture}}" alt="" height="100px" width="100px">
+                </div>
+            </div>
+            <div class="bottom">
+                    <button>view</button>
+                    <button>edit</button>
+                    <button (click)="delete(Identitycards.id)">delete</button>
+            </div>
+        </div>
+    </div>
+</div>

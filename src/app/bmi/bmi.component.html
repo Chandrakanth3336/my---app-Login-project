@@ -1,0 +1,24 @@
+<p>bmi works!</p>
+<div class="parent">
+    <div class="BMI">
+        <div class="top">
+            <h1>Body Mass Index (BMI) Calculator</h1>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <div class="form">
+                    <label for="">weight</label>
+                    <input type="number" [(ngModel)]="weight">
+                    <label for="">height</label>
+                    <input type="number" [(ngModel)]="height">
+                    <button [disabled]="!weight || !height" (click)="bmi()">Calculate BMI</button>
+                    <h2 >Your BMI is {{result}} </h2>
+                </div>
+            </div>
+            <div class="right">
+                <div id="img-one"><img src="https://www.shutterstock.com/image-vector/bmi-body-mass-index-meter-600nw-2313911113.jpg" alt=""></div>
+                <div id="image"><img src="https://www.shutterstock.com/image-vector/body-mass-index-vector-illustration-600nw-716496511.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>

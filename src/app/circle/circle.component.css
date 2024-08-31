@@ -1,0 +1,62 @@
+/* Center the circle calculator on the page */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+/* Style the calculator container */
+.child {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+/* Style the label */
+.child label {
+    font-size: 16px;
+    color: #555555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the input field */
+.child input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the buttons */
+.child button {
+    width: 45%;
+    padding: 10px;
+    margin: 10px 2.5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the buttons */
+.child button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the result display */
+.child h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #444444;
+}
+

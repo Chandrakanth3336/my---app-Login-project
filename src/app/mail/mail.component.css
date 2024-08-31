@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+.parent{
+    height: 100vh;
+    width: 75vw;
+    background-color: white;
+}
+.child{
+    font-size: 20px;
+    font-weight: 800;
+}
+.true {
+    color: grey;
+}
+.false{
+    color: black;
+}

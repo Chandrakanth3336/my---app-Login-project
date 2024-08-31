@@ -1,0 +1,60 @@
+/* Parent container for the vehicle details */
+.parent {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the vehicle image */
+.parent img {
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the vehicle details headings */
+.parent h1 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Custom styles for specific details */
+.parent h1:nth-child(2) {
+    color: #007BFF; /* Vehicle name */
+    font-size: 24px;
+}
+
+.parent h1:nth-child(3) {
+    color: #28A745; /* Manufacturer */
+}
+
+.parent h1:nth-child(4),
+.parent h1:nth-child(5),
+.parent h1:nth-child(6),
+.parent h1:nth-child(7) {
+    color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .parent {
+        padding: 15px;
+    }
+
+    .parent h1 {
+        font-size: 18px;
+    }
+
+    .parent h1:nth-child(2) {
+        font-size: 22px;
+    }
+}

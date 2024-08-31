@@ -1,0 +1,30 @@
+<div class="parent">
+    <form [formGroup]="CreateIDForm">
+        <p>Create Student-Id Form</p>
+    
+        <label for="">Name:</label>
+        <input type="text" formControlName="name" >
+        <br>
+    
+        <label for="">DOB:</label>
+        <input type="text" formControlName="phone">
+        <br>
+    
+        <label for="">Email:</label>
+        <input type="email" formControlName="city">
+        <br>
+    
+        <label for="">Phone Number:</label>
+        <input type="number" formControlName="dob">
+        <br>
+
+        <label for="">City:</label>
+        <input type="text" formControlName="email">
+        <br>
+    
+        <label for="">profie_picture:</label>
+        <input type="text" formControlName="profile_picture">
+        <br>
+        <button (click)="create()">create</button>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+
+            <!-- USING [ngStyle] -->
+
+<!-- <div class="parent">
+    <div class="child" *ngFor="let mails of Mail"  
+    [ngStyle]="{'color':mails.completed===true?'grey':'black'}">
+        {{mails.id +'. '}}
+       {{mails.title}} 
+    </div>
+</div> -->
+
+
+            <!-- USING [ngClass] -->
+
+ <div class="parent">
+    <div class="child" *ngFor="let mails of mail"  
+    [ngClass]="{'true': mails.completed,'false':!mails.completed}">
+        {{mails.id +'. '}}
+       {{mails.title}} 
+    </div>
+</div> 

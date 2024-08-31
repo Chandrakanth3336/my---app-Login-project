@@ -1,0 +1,52 @@
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<label for="">column</label>
+<select name="" id="" [(ngModel)]="column">
+    <option >account_name</option>
+    <option >available_balance</option>
+    <option >account_number</option>
+    <option >city</option>
+    <option >id</option>
+    
+</select>
+<label for="">order</label>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+</select>
+ <button (click)="sort()">search</button>
+
+
+
+
+
+<table border="0">
+    <thead>
+        <tr>
+            <th>Account_Name</th>
+            <th>Available_Balance</th>
+            <th>Account_Number</th>
+            <th>City</th>
+            <th>Profile_Picture</th>
+            <th>Id</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bankaccount of bankaccounts">
+            <td>{{bankaccount.account_name}}</td>
+            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.account_number}}</td>
+            <td>{{bankaccount.city}}</td>
+            <td>
+              <img src="{{bankaccount.profie_picture}}" alt="">
+            </td>
+            <td>{{bankaccount.id}}</td>
+            <td>
+                <button (click)="view(bankaccount.id)">view</button>
+                <button (click)="edit(bankaccount.id)">edit</button>
+                <button (click)="delete(bankaccount.id)">delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>

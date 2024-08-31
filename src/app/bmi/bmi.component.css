@@ -1,0 +1,123 @@
+/* Center the BMI calculator on the page */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Style the BMI calculator container */
+.BMI {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+/* Style the top section (title) */
+.BMI .top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.BMI .top h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Style the bottom section (form and image) */
+.BMI .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the form section */
+.BMI .bottom .left .form {
+    width: 60%;
+}
+
+.BMI .bottom .left .form label {
+    font-size: 16px;
+    color: #555555;
+    display: block;
+    margin-top: 10px;
+}
+
+.BMI .bottom .left .form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.BMI .bottom .left .form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BMI .bottom .left .form button:hover {
+    background-color: #0056b3;
+}
+
+.BMI .bottom .left .form h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444444;
+}
+
+/* Style the image section */
+.BMI .bottom .right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BMI .bottom .right #img-one,
+.BMI .bottom .right #image {
+    width: 100%;
+    height: 120px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+.BMI .bottom .right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BMI .bottom .right #img-one,
+.BMI .bottom .right #image {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the image stays within the div */
+}
+
+.BMI .bottom .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
