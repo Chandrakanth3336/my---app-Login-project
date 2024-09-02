@@ -28,6 +28,8 @@ import { ReloadComponent } from './reload/reload.component';
 import { NewVehicleComponent } from './new-vehicle/new-vehicle.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewBankaccountComponent } from './view-bankaccount/view-bankaccount.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -57,6 +59,8 @@ const routes: Routes = [
   {path:"edit-vehicle/:id",component:CreateVehicleComponent},
   {path:"view-bankaccount/:id",component:ViewBankaccountComponent},
   {path:"edit-bankaccount/:id",component:CreateBankaccountsComponent},
+  {path:"create-user",component:CreateUserComponent},
+  {path:"student-details",component:StudentDetailsComponent},
   {path:'',component:WelcomeComponent}
   ]},
   {path:"",component:LoginComponent},

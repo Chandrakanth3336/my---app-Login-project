@@ -31,6 +31,8 @@ import { PhotogalleryComponent } from './photogallery/photogallery.component';
 import { ReloadComponent } from './reload/reload.component';
 import { NewVehicleComponent } from './new-vehicle/new-vehicle.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
     ReloadComponent,
     NewVehicleComponent,
     ViewVehicleComponent,
+    CreateUserComponent,
+    StudentDetailsComponent,
  
   ],
   imports: [
