@@ -30,6 +30,9 @@ import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewBankaccountComponent } from './view-bankaccount/view-bankaccount.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { SiblingComponent } from './sibling/sibling.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -61,6 +64,9 @@ const routes: Routes = [
   {path:"edit-bankaccount/:id",component:CreateBankaccountsComponent},
   {path:"create-user",component:CreateUserComponent},
   {path:"student-details",component:StudentDetailsComponent},
+  {path:"parent",component:ParentComponent},
+  {path:"text-area",component:TextAreaComponent},
+  {path:"sibling",component:SiblingComponent},
   {path:'',component:WelcomeComponent}
   ]},
   {path:"",component:LoginComponent},

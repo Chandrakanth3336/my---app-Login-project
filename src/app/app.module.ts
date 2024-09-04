@@ -33,6 +33,13 @@ import { NewVehicleComponent } from './new-vehicle/new-vehicle.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 
 @NgModule({
@@ -66,6 +73,13 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     ViewVehicleComponent,
     CreateUserComponent,
     StudentDetailsComponent,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    TextAreaComponent,
+    SiblingComponent,
+    Sibling1Component,
+    Sibling2Component,
  
   ],
   imports: [

@@ -7,6 +7,10 @@
         <br>
         <label for="">Password:</label>
         <input type="password" placeholder="password" formControlName="password" required>
+        <div  *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid"> 
+            <p class="error" *ngIf="loginForm.get('password')?.errors?.['required']"> Password Is Required</p>
+            <p class="error" *ngIf="loginForm.get('password')?.errors?.['pattern']"> Password Must be Contain a Capital Letter,Small Letter,Number and Special Character,min length is 8 letters</p>
+        </div>
         <br>
         <button (click)="login()">Login</button>
         

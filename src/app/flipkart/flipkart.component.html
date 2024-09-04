@@ -4,20 +4,25 @@
             <div class="left">
                 <h3>FLIPKART</h3>
 
-                <input type="text" [(ngModel)]="term" (keyup)="search()"><button id="freedelivery" (click)="freedelivery()">Only Free Delivery</button>
+                <input type="text" [(ngModel)]="term" (keyup)="search()"><button id="freedelivery"
+                    (click)="freedelivery()">Only Free Delivery</button>
                 <br>
                 <br>
-                <button class="HL" (click)="phl()">Price High to Low</button> <button class="HL" (click)="plh()">Price Low to High </button>
-                <button class="HL" (click)="rhl()">Ratings High to Low</button> <button class="HL" (click)="rlh()">Ratings Low to High</button>
+                <button class="HL" (click)="phl()">Price High to Low</button> <button class="HL" (click)="plh()">Price
+                    Low to High </button>
+                <button class="HL" (click)="rhl()">Ratings High to Low</button> <button class="HL"
+                    (click)="rlh()">Ratings Low to High</button>
                 <br>
                 <br>
-                <button class="Dis" (click)="discount()">Apply 50% Discount</button> <button class="Dis" (click)="delcharges()">Price With Delivery Charges</button>
+                <button class="Dis" (click)="discount()">Apply 50% Discount</button> <button class="Dis"
+                    (click)="delcharges()">Price With Delivery Charges</button>
                 <br>
                 <br>
-                <button class="Total" (click)="total()">Total Price</button>  <h4>total cost={{total1}}</h4> 
+                <button class="Total" (click)="total()">Total Price</button>
+                <h4>total cost={{total1}}</h4>
                 <button class="Total" (click)="cartitems()">Total Cart Iems</button>
-                <h4>total cart itemss={{total2}}</h4> 
-               
+                <h4>total cart itemss={{total2}}</h4>
+
             </div>
             <div class="right">
 
@@ -60,7 +65,9 @@
                         <td>{{i+1}}</td>
                         <td>{{product.name}}</td>
                         <td>{{product.price}}</td>
-                        <td>{{product.rating}}</td>
+                        <td>
+                            <app-rating [rating]="product.rating"></app-rating>
+                        </td>
                         <td>{{product.freeDelivery}}</td>
                         <td><button id="delete" (click)="delete(i)">Delete</button></td>
                     </tr>

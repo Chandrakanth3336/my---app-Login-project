@@ -6,19 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-  public num1:number=0;
-  public num2:number=0;
+    public num11:number=0;
+   public num22:number=0;
   public result:number=0;
-  sum(){
-    this.result=this.num1 + this.num2;
+
+  catch(value:number){
+    this.result=value;
   }
-  sub(){
-    this.result=this.num1 - this.num2;
-  }
-  mul(){
-    this.result=this.num1 * this.num2;
-  }
-  div(){
-    this.result=this.num1 / this.num2;
-  }
+  // sum(){
+  //   this.result=this.num1 + this.num2;
+  // }
+  // sub(){
+  //   this.result=this.num1 - this.num2;
+  // }
+  // mul(){
+  //   this.result=this.num1 * this.num2;
+  // }
+  // div(){
+  //   this.result=this.num1 / this.num2;
+  // }
 }
