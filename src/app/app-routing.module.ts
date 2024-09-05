@@ -35,6 +35,7 @@ import { TextAreaComponent } from './text-area/text-area.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { AmazonComponent } from './amazon/amazon.component';
 import { TodoComponent } from './todo/todo.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -71,6 +72,7 @@ const routes: Routes = [
   {path:"sibling",component:SiblingComponent},
   {path:"amazon",component:AmazonComponent},
   {path:"todo",component:TodoComponent},
+  {path:"about-company",component:AboutCompanyComponent},
   {path:'',component:WelcomeComponent}
   ]},
   {path:"",component:LoginComponent},
