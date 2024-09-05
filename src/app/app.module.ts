@@ -40,6 +40,15 @@ import { TextAreaComponent } from './text-area/text-area.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { Amazon1Component } from './amazon1/amazon1.component';
+import { Amazon2Component } from './amazon2/amazon2.component';
+import { Amazon3Component } from './amazon3/amazon3.component';
+import { Amazon4Component } from './amazon4/amazon4.component';
+import { TodoComponent } from './todo/todo.component';
+import { Todo1Component } from './todo1/todo1.component';
+import { Todo2Component } from './todo2/todo2.component';
+import { Todo3Component } from './todo3/todo3.component';
 
 
 @NgModule({
@@ -80,6 +89,15 @@ import { Sibling2Component } from './sibling2/sibling2.component';
     SiblingComponent,
     Sibling1Component,
     Sibling2Component,
+    AmazonComponent,
+    Amazon1Component,
+    Amazon2Component,
+    Amazon3Component,
+    Amazon4Component,
+    TodoComponent,
+    Todo1Component,
+    Todo2Component,
+    Todo3Component,
  
   ],
   imports: [

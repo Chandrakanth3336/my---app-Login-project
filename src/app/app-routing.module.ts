@@ -33,6 +33,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { ParentComponent } from './parent/parent.component';
 import { TextAreaComponent } from './text-area/text-area.component';
 import { SiblingComponent } from './sibling/sibling.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -67,6 +69,8 @@ const routes: Routes = [
   {path:"parent",component:ParentComponent},
   {path:"text-area",component:TextAreaComponent},
   {path:"sibling",component:SiblingComponent},
+  {path:"amazon",component:AmazonComponent},
+  {path:"todo",component:TodoComponent},
   {path:'',component:WelcomeComponent}
   ]},
   {path:"",component:LoginComponent},

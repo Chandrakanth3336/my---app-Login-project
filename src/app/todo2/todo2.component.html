@@ -1,0 +1,12 @@
+<form action=""></form>
+<div class="grandParent" *ngIf="task && time">
+    <div class="parent">
+        <div class="child" >
+        <p>Task: {{task}}</p>
+        <p>Time: {{time}}</p>
+        <button (click)="view()" [(ngModel)]="viewed" >View</button>
+        <button>Edit</button>
+        <button>Delete</button>
+        </div>
+        </div>
+</div>
