@@ -1,17 +1,18 @@
 <div class="parent">
-    <div class="child">
-        <h2>To-Do</h2>
-
+            <h3>To-Do App</h3>
         <label for="">Task:</label>
-       <textarea [(ngModel)]="taskarea" maxlength="150" cols="10" rows="5"></textarea>
+        <textarea  [(ngModel)]="task1"></textarea>
         <br>
         <br>
-        <label for="">Time:</label>
-        <input type="datetime-local" name="" id="" [(ngModel)]="timeinput">
+
+        <label for="">Time</label>
+        <input type="datetime-local"  [(ngModel)]="time1">
         <br>
         <br>
 
         <button (click)="create()">Create</button>
-        <button (click)="reset()">Reset</button> 
-    </div>
+
+        <br>
+        <br>
+         <button (click)="reset()">Reset</button>
 </div>

@@ -1,12 +1,9 @@
-<form action=""></form>
-<div class="grandParent" *ngIf="task && time">
-    <div class="parent">
-        <div class="child" >
-        <p>Task: {{task}}</p>
-        <p>Time: {{time}}</p>
-        <button (click)="view()" [(ngModel)]="viewed" >View</button>
-        <button>Edit</button>
-        <button>Delete</button>
-        </div>
-        </div>
+
+<div *ngFor="let data of todo; let i=index" >
+    <p>Todo-List</p>
+    <h3>Task:{{data.textData}}</h3>
+    <h3>Time:{{data.dateData}}</h3>
+    <button (click)="view(i)">View</button>
+    <button  (click)="edit(i)">Edit</button>
+    <button (click)="delete(i)">Delete</button> 
 </div>

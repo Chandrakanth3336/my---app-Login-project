@@ -5,36 +5,38 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class TodoService {
-
+  
   constructor() {}
-  private tasktime:string='';
-  private timetask:string='';
-  private tasktimeSubject:BehaviorSubject<string>=new BehaviorSubject('');
+   private todo:{textData:string;dateData:string}[]=[];
 
-  settasktime(value:string,result:string){
-    this.tasktimeSubject.next(value)
+   private tasktimeSubject:BehaviorSubject<any>=new BehaviorSubject(this.todo);
    
+  settasks(todos:any){
+    this.todo.push(todos);
+    this.tasktimeSubject.next(this.todo);
   }
- 
-  gettasktime(){
+  gettasks(){
     return this.tasktimeSubject;
   }
-
-  // private tasktime1Subject:BehaviorSubject<string>=new BehaviorSubject('');
-  // settasktime1(value: string){
-  //   this.tasktime1Subject.next(value);
-  // }
+ 
   
-  // gettasktime1(){
-  //   return this.tasktime1Subject;
-  // }
-// private viewin:string='';
-  private viewSubject:BehaviorSubject<any>=new BehaviorSubject('');
-  setasview(value:string){
+  private viewSubject:BehaviorSubject<any>=new BehaviorSubject(this.todo);
+  setview(value:any){
     this.viewSubject.next(value);
+    
   }
-  getasview(){
+  getview(){
     return this.viewSubject;
+  }
+
+  private editSubject:BehaviorSubject<any>=new BehaviorSubject(this.todo);
+  setedit(value:any){
+    this.editSubject.next(value,);
+  }
+
+  getedit(){
+    return this.editSubject;
+    
   }
 }
 

@@ -9,29 +9,27 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./todo2.component.css']
 })
 export class Todo2Component {
-public task:any;
-public time:any;
-public viewed:string='';
+  public todo:{textData:string;dateData:string}[]=[];
 
+ 
 constructor(private _todoService:TodoService){
-  _todoService.gettasktime().subscribe(
+  _todoService.gettasks().subscribe(
     (data:any)=>{
-      this.task=data;
-      this.time=data;
+      console.log(data);
+      this.todo=data;
+     
     }
   )
-
-  // _todoService.gettasktime().subscribe(
-  //   (data:any)=>{
-  //     this.time=data;
-  //   }
-  // )
-  
 }
 
-view(){
-  this._todoService.setasview(this.viewed);
-  
+view(i:number){
+//  var texttodo=this.todo[i];
+this._todoService.setview(this.todo[i]);
 }
-
+edit(i:number){
+this._todoService.setedit(this.todo[i])
+}
+delete(i:number){
+  this.todo.splice(i ,1);
+}
 }

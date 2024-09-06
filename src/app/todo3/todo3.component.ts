@@ -8,12 +8,15 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todo3.component.css']
 })
 export class Todo3Component {
-  public view:string='';
-constructor(private _todoService:TodoService){
-  _todoService.getasview().subscribe(
+  public text:string="";
+  public date:string=""
+ constructor(private _todoService:TodoService){
+  _todoService.getview().subscribe(
     (data:any)=>{
-      this.view=data;
+    this.text=data.textData;
+    this.date=data.dateData;
+  
     }
   )
-}
+ }
 }
